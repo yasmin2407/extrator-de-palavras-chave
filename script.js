@@ -21,7 +21,7 @@ function processaTexto(texto) {
 
     palavras = tiraPalavrasRuins(palavras);
 
-    const frequencias = contaFrequencia(palavras);
+    const frequencias = contaFrequencias(palavras);
 
     // Ordena a palavra por frequência
     function ordenaPalavra(p1, p2) {
@@ -42,7 +42,7 @@ function tiraPalavrasRuins(palavras) {
     return palavrasBoas;
 }
 
-function contaFrequencia(palavras) {
+function contaFrequencias(palavras) {
     const frequencias = {};
 
     for (let i of palavras) {
